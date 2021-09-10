@@ -133,21 +133,35 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+.main--tables-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 400px;
+  padding: 0 50px;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  scroll-snap-type: x proximity;
+}
 .main--currency-table {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
+  scroll-snap-align: center;
 }
 .main--currency-table .currency-table--title {
   margin-bottom: 15px;
-  margin-left: 15px;
+  /* margin-left: 50%; */
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
-  text-align: left;
+  text-align: center;
+}
+.main--currency-table #title-blue {
+  color: var(--secondary-blue);
 }
 .currency-table--container {
   width: 90%;
@@ -235,9 +249,12 @@ main {
   position: absolute;
   width: 40px;
   height: 25px;
-  top: -10px;
+  top: -12px;
   left: calc(50% - 20px);
   background-image: url("../assets/icons/isotipo.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .product-detail--title {
   width: 90%;
@@ -255,18 +272,24 @@ main {
   color: var(--just-white);
 }
 .product-detail--title p {
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
 }
+.product-cards--container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .product-detail--card {
   width: 90%;
   min-width: 288px;
-  max-width: 400px;
-  min-height: 150px;
-  margin: 15px auto;
+  max-width: 350px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 15px;
   padding: 15px;
   background-color: var(--black);
   border-radius: 5px;
@@ -329,7 +352,7 @@ main {
   width: 100%;
   min-width: 320px;
   height: 50vh;
-  background-image: url("../assets/imgs/bitcoinbaby.jpg");
+  background-image: url("../assets/imgs/bitcoinbaby-x2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -345,7 +368,7 @@ main {
 .main-plans-container {
   width: 100%;
   min-width: 320px;
-  padding-bottom: 70px;
+  padding-bottom: 65px;
   text-align: center;
 }
 .plans-title {
@@ -372,7 +395,8 @@ main {
 .plans-container--slider {
   display: flex;
   gap: 10px;
-  height: 316px;
+  height: 320px;
+  padding: 0 50px;
   overflow-x: scroll;
   overscroll-behavior: contain;
   scroll-snap-type: x proximity;
@@ -423,7 +447,7 @@ main {
 .plan-card--price span {
   position: absolute;
   top: 5px;
-  left: 35px;
+  left: calc(50% - 50px);
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -443,6 +467,7 @@ main {
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--warm-black);
+  cursor: pointer;
 }
 .plan-card--cta span {
   display: inline-block;
@@ -462,6 +487,7 @@ footer section {
   width: 50%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 footer .left ul {
   font-size: 1.4rem;
@@ -475,4 +501,14 @@ footer .left ul {
 .left a {
   text-decoration: none;
   color: var(--just-white);
+}
+.right img {
+  width: 40px;
+  height: 25px;
+}
+.right p {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
 }

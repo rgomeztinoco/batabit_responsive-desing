@@ -1,0 +1,8 @@
+.bitcoin-img-container {
+  background-image: url("../assets/imgs/bitcoinbaby-x4.jpg");
+}
+.product-card--division {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }

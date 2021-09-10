@@ -1,0 +1,29 @@
+header img {
+  width: 225px;
+  height: 35px;
+}
+.product-detail--batata-logo {
+  position: absolute;
+  width: 60px;
+  height: 35px;
+  top: -17px;
+  left: calc(50% - 30px);
+}
+.bitcoin-img-container {
+  background-image: url("../assets/imgs/bitcoinbaby-x3.jpg");
+}
+.bitcoin-img-container h2 {
+    font-size: 3.5rem;
+}
+.plans-title {
+  margin-bottom: 0;
+}
+.right img {
+    width: 60px;
+    height: 30px;
+  }
+  .right p {
+    font-size: 1.2rem;
+    line-height: 3rem;
+    font-weight: 300;
+  }
