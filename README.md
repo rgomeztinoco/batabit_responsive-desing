@@ -1,2 +1,2 @@
-# Batabit_responsive-desing
+# Batabit (Curso de responsive desing)
 Proyecto del curso de responsive desing en Platzi en el cual se desarrolla la landing page de la empresa Batabit.
